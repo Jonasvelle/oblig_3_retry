@@ -10,5 +10,18 @@ def test_leap_years(leap_years):
     result = isLeapYear(leap_years)
     assert result == True, f"Year {leap_years} should be a leap year."
 
+
+@pytest.fixture(params=[1964, 1988, 1980])
+def leap_years(request):
+    return request.param
+
+
+def test_is_not_leap_years(leap_years):
+    result = isLeapYear(leap_years)
+    assert result == True, f"Year {leap_years} should be a leap year"
+
+
+
+
 if __name__== "main":
     pytest.main()

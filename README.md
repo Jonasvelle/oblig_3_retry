@@ -19,3 +19,4 @@ Deretter kjør Pytest: Dette trinnet bruker kommandoen pytest --junitxml=pytest_
 Sett output (output name "report"): Dette trinnet bruker echo-kommandoen sammen med ::set-output for å informere GitHub Actions om plasseringen av JUnit XML-testrapporten. Denne informasjonen kan brukes senere i workflowen
 
 Last opp testrapport: Til slutt bruker dette trinnet GitHub Actions-håndlingen jeg har gjort slik at man kan laste ned pytest rapport osv
+
